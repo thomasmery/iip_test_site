@@ -16,6 +16,7 @@ web/.htaccess
 
 # Themes
 web/app/themes/*
+!web/app/themes/.gitkeep
 
 # WP-CLI
 db-sync
