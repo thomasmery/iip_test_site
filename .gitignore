@@ -14,11 +14,6 @@ web/app/uploads/*
 web/wp
 web/.htaccess
 
-# Themes
-# we keep the theme in the wp app deploy but also want to keep it in its own repo
-web/app/themes/iip/.git
-
-
 # WP-CLI
 db-sync
 sql-dump-*.sql
