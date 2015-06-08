@@ -1,0 +1,14 @@
+{
+    "name": "aaltomeri/iip",
+    "type":"wordpress-theme",
+    "authors": [
+        {
+            "name": "Monica Fraile / Thomas Mery",
+            "email": "infos@aaltomeri.net"
+        }
+    ],
+    "require": {
+    	"composer/installers" : "~1.0.0",
+        "php" : ">=5.4"
+    }
+}
