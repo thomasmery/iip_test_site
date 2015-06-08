@@ -1,5 +1,5 @@
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'iip_app'
+set :repo_url, 'git@github.com:thomasmery/iip_test_site.git'
 
 # Branch options
 # Prompts for the branch name (defaults to current branch)

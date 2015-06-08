@@ -8,7 +8,18 @@ set :stage, :staging
 
 # Extended Server Syntax
 # ======================
-server 'example.com', user: 'deploy', roles: %w{web app db}
+server 'thomasmery.webfactional.com', user: 'thomasmery', roles: %w{web app db}
+
+set :webfaction_home, '/home/thomasmery'
+set :tmp_dir, "#{fetch(:webfaction_home)}/tmp"
+set :deploy_to, "/home/thomasmery/webapps/#{fetch(:application)}"
+
+# Composer options
+set :composer_install_flags, '--no-dev --no-interaction --quiet --optimize-autoloader'
+# set :composer_install_flags, '--optimize-autoloader'
+
+# this is necessary
+SSHKit.config.command_map[:composer] = "php54 #{shared_path.join('composer.phar')}"
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
